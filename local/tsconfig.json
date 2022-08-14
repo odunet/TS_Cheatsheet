@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    // "allowJs": true, // Allow current JS files
+    // "checkJs": true, // Check JS files for errors
+    // "noEmit": true  /* No files will be emitted */
+    "strict": true,
+    "outDir": "build",
+    "target": "esnext" ,
+    "forceConsistentCasingInFileNames": true, 
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+  },
+  "include": ["src/**/*"]
+}

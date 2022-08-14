@@ -41,6 +41,16 @@ const func = (str: string): Contact => {
 const clone_result = clone('Joh Doe', func)
 console.log(`Result 3: ${JSON.stringify(clone_result, null, 2)}`);
 
+// discriminated unions
+type Shape =
+  | { kind: "circle"; radius: number }
+  | { kind: "square"; x: number }
+  | { kind: "triangle"; x: number; y: number };
+
+const shape1: Shape = {kind: "circle", radius: 10}
+const shape2: Shape = {kind: "square", x: 10}
+const shape3: Shape = {kind: "triangle", x: 10, y: 10}
+
 // interface with dynamic keys
 interface Counter {
   [key: string]: number
